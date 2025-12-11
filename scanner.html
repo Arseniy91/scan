@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="image/logo_round.png">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/scanner.css">
+    <link rel="stylesheet" href="css/burgers.css">
+    <title>СканЕда • Сканер</title>
+</head>
+<body>
+<header class="main-header">
+  <div class="logo-block">
+    <img src="image/logo_round.png" alt="logo" class="logo">
+    <span class="brand-name">СканЕда</span>
+  </div>
+
+  <div class="burger" id="burger">
+    <span></span><span></span><span></span>
+  </div>
+
+  <nav class="side-menu" id="menu">
+    <a href="index.html">Главная</a>
+    <a href="products.html">Продукты</a>
+    <a href="info.html">О сервисе</a>
+    <a href="cabinet.html">Личный кабинет</a>
+  </nav>
+
+  <div class="overlay" id="overlay"></div>
+</header>
+
+    <h2>📷 Сканер штрих-кодов</h2>
+
+    <div id="scanner-container">
+        <video id="video" autoplay></video>
+    </div>
+
+    <button id="startBtn">Запустить камеру</button>
+
+    <p>Результат: <span id="result">нет данных</span></p>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/quagga/0.12.1/quagga.min.js"></script>
+    <script src="js/scanner.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
